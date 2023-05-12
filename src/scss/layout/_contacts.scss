@@ -1,0 +1,36 @@
+@use "../abstracts/variables";
+
+.contacts {
+  display: flex;
+  max-width: 100%;
+
+  flex-direction: column;
+  gap: 50px;
+}
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  flex-direction: column;
+  border: 1px solid variables.$lines;
+  border-radius: 5px;
+  padding: 40px;
+  box-shadow: 1px 1px 15px rgb(228, 225, 225);
+}
+.contact-a {
+  text-decoration: none;
+  color: variables.$accent;
+}
+.contact-a:hover,
+.contact-a:focus {
+  color: variables.$ck-font;
+}
+.contact-a-phone {
+  margin-top: 10px;
+}
+
+.contact-img {
+  color: variables.$ck-font;
+  width: 50px;
+}

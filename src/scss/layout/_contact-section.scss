@@ -1,0 +1,37 @@
+@use "../abstracts/variables";
+
+.contact-section {
+  padding: 120px 200px;
+  height: 120vh;
+
+  background-color: variables.$button;
+  color: #1d1d1f;
+  text-align: center;
+}
+.flex-container {
+  margin-top: 120px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media screen and (max-width: 1200px) {
+  .contact-section {
+    padding: 120px 100px;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .contact-section {
+    height: 180vh;
+  }
+  .flex-container {
+    flex-direction: column;
+  }
+  @media screen and (max-width: 550px) {
+    .contact-section {
+      padding: 120px 20px;
+    }
+  }
+}

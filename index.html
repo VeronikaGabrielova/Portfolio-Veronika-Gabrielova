@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/692040065a.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <link rel="stylesheet" href="css/main.css" />
+
+    <title>Veronika Gabrielová</title>
+  </head>
+  <body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">
+      <i class="fa-solid fa-arrow-up" style="color: #ce7b91"></i>
+    </button>
+    <section class="hero" id="home">
+      <nav class="nav-list">
+        <div class="line" id="line"></div>
+
+        <ul class="nav-items" id="nav-list">
+          <li class="nav-item">
+            <a class="nav-link" href="#about-me">About me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact-me">Contact</a>
+          </li>
+        </ul>
+        <button class="hamburger" id="hamburger">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </nav>
+      <div class="hero-area">
+        <div class="hero-text">
+          <p class="hero-greet">Hi, my name is</p>
+          <h1 class="hero-name">Veronika Gabrielová</h1>
+          <p class="hero-p">Junior UX/UI and Web Development</p>
+
+          <div class="button">
+            <a class="button-link" href="#about-me">About me</a>
+          </div>
+        </div>
+
+        <div class="socials">
+          <div>
+            <a href="https://github.com/VeronikaGabrielova" class="social">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="#1d1d1f"
+                width="70"
+                height="70"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm0 6c-3.313 0-6 2.686-6 6 0 2.651 1.719 4.9 4.104 5.693.3.056.396-.13.396-.289v-1.117c-1.669.363-2.017-.707-2.017-.707-.272-.693-.666-.878-.666-.878-.544-.373.041-.365.041-.365.603.042.92.619.92.619.535.917 1.403.652 1.746.499.054-.388.209-.652.381-.802-1.333-.152-2.733-.667-2.733-2.965 0-.655.234-1.19.618-1.61-.062-.153-.268-.764.058-1.59 0 0 .504-.161 1.65.615.479-.133.992-.199 1.502-.202.51.002 1.023.069 1.503.202 1.146-.776 1.648-.615 1.648-.615.327.826.121 1.437.06 1.588.385.42.617.955.617 1.61 0 2.305-1.404 2.812-2.74 2.96.216.186.412.551.412 1.111v1.646c0 .16.096.347.4.288 2.383-.793 4.1-3.041 4.1-5.691 0-3.314-2.687-6-6-6z"
+                />
+              </svg>
+            </a>
+          </div>
+          <div>
+            <a
+              href="https://www.linkedin.com/in/veronika-gabrielova-5b70ba257/"
+              class="social"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="#1d1d1f"
+                width="70"
+                height="70"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-2 8c0 .557-.447 1.008-1 1.008s-1-.45-1-1.008c0-.557.447-1.008 1-1.008s1 .452 1 1.008zm0 2h-2v6h2v-6zm3 0h-2v6h2v-2.861c0-1.722 2.002-1.881 2.002 0v2.861h1.998v-3.359c0-3.284-3.128-3.164-4-1.548v-1.093z"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--------------------------------------------------------------->
+    <section class="sub-section section" id="about-me">
+      <div class="information">
+        <h2 class="section-header">About me</h2>
+        <p>
+          Hi there! My name is Veronika Gabrielová and I'm a junior web
+          developer with a strong interest in
+          <span>frontend development and UX/UI</span>.
+        </p>
+        <p>
+          I'm currently
+          <span class="about-highlight">looking for opportunities</span> to
+          further develop my skills and gain hands-on experience in the
+          industry. Whether it's working on a new project or collaborating with
+          other developers, I'm always eager to
+          <span class="about-highlight">learn and grow </span>as a developer.
+        </p>
+        <p>
+          If you're looking for someone with a
+          <span class="about-highlight">passion for frontend development</span>
+          and an eye for design, I'd love to chat with you and see how I can
+          contribute to your team!
+        </p>
+        <div class="button">
+          <a class="button-link button-link-contact" href="#contact-me"
+            >Contact Me</a
+          >
+        </div>
+      </div>
+
+      <div class="headshot-container">
+        <div class="headshot">
+          <img class="headshot-image" src="/src/images/profile.jpg" />
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-skills" id="skills">
+      <h2 class="section-header">My Skills</h2>
+      <div class="icons-container">
+        <div class="icon-anime">
+          <h4 class="icon-header">HTML</h4>
+          <img
+            class="icon-img"
+            src="./src/images/icons/html.svg"
+            alt="HTML icon"
+          />
+        </div>
+        <div class="icon-anime">
+          <h4 class="icon-header">CSS</h4>
+          <img
+            class="icon-img"
+            src="./src/images/icons/css.svg"
+            alt="CSS icon"
+          />
+        </div>
+        <div class="icon-anime">
+          <h4 class="icon-header">SASS</h4>
+          <img
+            class="icon-img"
+            src="./src/images/icons/sass.svg"
+            alt="Sass icon"
+          />
+        </div>
+        <div class="icon-anime">
+          <h4 class="icon-header">Bootstrap</h4>
+          <img
+            class="icon-img"
+            src="./src/images/icons/bootstrap.svg"
+            alt="Bootstrap icon"
+          />
+        </div>
+        <div class="icon-anime">
+          <h4 class="icon-header">Javascript</h4>
+          <img
+            class="icon-img"
+            src="./src/images/icons/javascript.svg"
+            alt="Javascript icon"
+          />
+        </div>
+        <div class="icon-anime">
+          <h4 class="icon-header">NPM</h4>
+          <img
+            class="icon-img"
+            src="./src/images/icons/npm.svg"
+            alt="Npm icon"
+          />
+        </div>
+        <div class="icon-anime">
+          <h4 class="icon-header">GIT</h4>
+          <img
+            class="icon-img"
+            src="./src/images/icons/git.svg"
+            alt="Git icon"
+          />
+        </div>
+        <div class="icon-anime">
+          <h4 class="icon-header">React</h4>
+          <img
+            class="icon-img"
+            src="./src/images/icons/react.svg"
+            alt="React icon"
+          />
+        </div>
+        <div class="icon-anime">
+          <h4 class="icon-header">Figma</h4>
+          <img
+            class="icon-img"
+            src="./src/images/icons/figma.svg"
+            alt="Figma icon"
+          />
+        </div>
+        <div class="icon-anime">
+          <h4 class="icon-header">Ad Photoshop</h4>
+          <img
+            class="icon-img"
+            src="./src/images/icons/photoshop.svg"
+            alt="Photoshop icon"
+          />
+        </div>
+        <div class="icon-anime">
+          <h4 class="icon-header">PHP</h4>
+          <img
+            class="icon-img"
+            src="./src/images/icons/php.svg"
+            alt="PHP icon"
+          />
+        </div>
+        <div class="icon-anime">
+          <h4 class="icon-header">SQL</h4>
+
+          <img
+            class="icon-img"
+            src="./src/images/icons/postgresql.svg"
+            alt="Sql icon"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section class="sub-section-alternative section" id="projects">
+      <h2 class="section-header">Projects</h2>
+      <div class="project-container">
+        <div class="project-card">
+          <div class="project-img-container">
+            <img
+              class="project-image"
+              src="./src/images/leviexpress.png"
+              alt="LeviExpress project photo"
+            />
+          </div>
+          <hr class="project-line" />
+          <div class="project-info">
+            <h3 class="project-header">LeviExpress</h3>
+            <p class="subtext">
+              This project is a web application for searching connections and
+              booking tickets.
+            </p>
+
+            <div class="project-icons">
+              <img
+                class="project-icon"
+                src="./src/images/icons/react.svg"
+                alt="React icon"
+              />
+              <img
+                class="project-icon"
+                src="./src/images/icons/javascript.svg"
+                alt="Javascript icon"
+              />
+            </div>
+            <hr class="project-line" />
+            <div class="projects-links">
+              <p>
+                <a
+                  class="project-link"
+                  href="https://github.com/VeronikaGabrielova/LeviExpress"
+                  >Code</a
+                >
+              </p>
+              <p>
+                <a
+                  class="project-link"
+                  href="https://react-levi-express.netlify.app/"
+                  >Demo</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-img-container">
+            <img
+              class="project-image"
+              src="./src/images/smarthome.png"
+              alt="Smart Home project photo"
+            />
+          </div>
+          <hr class="project-line" />
+          <div class="project-info">
+            <h3 class="project-header">Smart Home</h3>
+            <p class="subtext">
+              This project is a web application for managing household tasks and
+              schedules.
+            </p>
+
+            <div class="project-icons">
+              <img
+                class="project-icon"
+                src="./src/images/icons/react.svg"
+                alt="React icon"
+              />
+              <img
+                class="project-icon"
+                src="./src/images/icons/javascript.svg"
+                alt="Javascript icon"
+              />
+            </div>
+            <hr class="project-line" />
+            <div class="projects-links">
+              <p>
+                <a
+                  class="project-link"
+                  href="https://github.com/VeronikaGabrielova/Chytry-dum-React"
+                  >Code</a
+                >
+              </p>
+              <p>
+                <a class="project-link" href="https://clever-house.netlify.app/"
+                  >Demo</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-img-container">
+            <img
+              class="project-image"
+              src="./src/images/education.png"
+              alt="Educational Institution project photo"
+            />
+          </div>
+          <hr class="project-line" />
+          <div class="project-info">
+            <h3 class="project-header">Educational Institution</h3>
+            <p class="subtext">
+              This is my project using bootstrap for education platform.
+            </p>
+
+            <div class="project-icons">
+              <img
+                class="project-icon"
+                src="./src/images/icons/bootstrap.svg"
+                alt="Bootstrap icon"
+              />
+              <img
+                class="project-icon"
+                src="./src/images/icons/javascript.svg"
+                alt="Javascript icon"
+              />
+            </div>
+            <hr class="project-line" />
+            <div class="projects-links">
+              <p>
+                <a
+                  class="project-link"
+                  href="https://github.com/VeronikaGabrielova/Educational-institution"
+                  >Code</a
+                >
+              </p>
+              <p>
+                <a
+                  class="project-link"
+                  href="https://educational-institution.netlify.app/index.html"
+                  >Demo</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-img-container">
+            <img
+              class="project-image"
+              src="./src/images/chatapp.png"
+              alt="Chat app project photo"
+            />
+          </div>
+          <hr class="project-line" />
+          <div class="project-info">
+            <h3 class="project-header">Chat App</h3>
+            <p class="subtext">
+              Chat app mockup challenge from Frontend Mentor.
+            </p>
+
+            <div class="project-icons">
+              <img
+                class="project-icon"
+                src="./src/images/icons/html.svg"
+                alt="React icon"
+              />
+              <img
+                class="project-icon"
+                src="./src/images/icons/css.svg"
+                alt="CSS icon"
+              />
+            </div>
+            <hr class="project-line" />
+            <div class="projects-links">
+              <p>
+                <a
+                  class="project-link"
+                  href="https://github.com/VeronikaGabrielova/Chat-app"
+                  >Code</a
+                >
+              </p>
+              <p>
+                <a
+                  class="project-link"
+                  href="https://veronikagabrielova.github.io/Chat-app/"
+                  >Demo</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-img-container">
+            <img
+              class="project-image"
+              src="./src/images/robots.png"
+              alt="Robots project photo"
+            />
+          </div>
+          <hr class="project-line" />
+          <div class="project-info">
+            <h3 class="project-header">Robots</h3>
+            <p class="subtext">
+              This was a project to filter data retrieved from an API.
+            </p>
+
+            <div class="project-icons">
+              <img
+                class="project-icon"
+                src="./src/images/icons/html.svg"
+                alt="React icon"
+              />
+              <img
+                class="project-icon"
+                src="./src/images/icons/css.svg"
+                alt="CSS icon"
+              />
+              <img
+                class="project-icon"
+                src="./src/images/icons/javascript.svg"
+                alt=" Javascript icon"
+              />
+            </div>
+            <hr class="project-line" />
+            <div class="projects-links">
+              <p>
+                <a
+                  class="project-link"
+                  href="https://github.com/VeronikaGabrielova/Projekt-3-Javascript-Robots"
+                  >Code</a
+                >
+              </p>
+              <p>
+                <a
+                  class="project-link"
+                  href="https://engeto-robots.netlify.app/"
+                  >Demo</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-img-container">
+            <img
+              class="project-image"
+              src="./src/images/custombakery.png"
+              alt="Custom Bakery project photo"
+            />
+          </div>
+          <hr class="project-line" />
+          <div class="project-info">
+            <h3 class="project-header">Custom Bakery</h3>
+            <p class="subtext">
+              First Project in my life. Using static site generator Eleventy and
+              Nunjucks.
+            </p>
+
+            <div class="project-icons">
+              <img
+                class="project-icon"
+                src="./src/images/icons/html.svg"
+                alt="React icon"
+              />
+              <img
+                class="project-icon"
+                src="./src/images/icons/css.svg"
+                alt="CSS icon"
+              />
+              <img
+                class="project-icon"
+                src="./src/images/icons/sass.svg"
+                alt="Sass icon"
+              />
+              <img
+                class="project-icon"
+                src="./src/images/icons/javascript.svg"
+                alt=" Javascript icon"
+              />
+            </div>
+            <hr class="project-line" />
+            <div class="projects-links">
+              <p>
+                <a
+                  class="project-link"
+                  href="https://github.com/VeronikaGabrielova/Zaverecny-projekt"
+                  >Code</a
+                >
+              </p>
+              <p>
+                <a
+                  class="project-link"
+                  href="https://zakazkove-peceni.netlify.app/"
+                  >Demo</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="contact-section" id="contact-me">
+      <h2 class="section-header">Get In Touch</h2>
+      <div class="flex-container">
+        <div class="contacts">
+          <div class="contact">
+            <img
+              class="contact-img"
+              src="./src/images/icons/mail.png"
+              alt="Email icon"
+            />
+            <a class="contact-a" href="mailto:gabriel.veru@gmail.com"
+              >gabriel.veru@gmail.com</a
+            >
+          </div>
+          <div class="contact">
+            <img
+              class="contact-img"
+              src="./src/images/icons/telephone.png"
+              alt="Telephone number"
+            />
+            <a class="contact-a contact-a-phone" href="tel:+420734110553"
+              >734 110 553</a
+            >
+          </div>
+        </div>
+
+        <form class="form">
+          <div class="form-group">
+            <label for="name" class="form-label">Name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              class="form-input"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="email" class="form-label">Email</label>
+            <input
+              placeholder="@"
+              type="email"
+              id="email"
+              name="email"
+              class="form-input"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="message" class="form-label">Message</label>
+            <textarea
+              class="textarea"
+              id="message"
+              name="message"
+              class="form-input"
+              required
+            ></textarea>
+          </div>
+          <button type="submit" class="form-button">Send Message</button>
+        </form>
+      </div>
+    </div>
+
+    <!---------------------->
+    <footer class="footer">
+      <p class="footer-text">Designed & build by Veronika Gabrielová</p>
+    </footer>
+    <script src="js/hamburger.js"></script>
+    <script src="js/scrollup-button.js"></script>
+    <script src="js/fadein.js"></script>
+    <script src="js/skillsanim.js"></script>
+    <script src="js/scrolling-cards.js"></script>
+  </body>
+</html>

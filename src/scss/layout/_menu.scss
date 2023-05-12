@@ -1,0 +1,123 @@
+@use "../abstracts/variables";
+
+.nav-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  background-color: variables.$background;
+}
+
+.line {
+  display: block;
+  position: relative;
+  left: 0;
+  content: "";
+  height: 30px;
+  width: 100px;
+  opacity: 0.8;
+  background-color: variables.$accent;
+  transform: translateX(-100%);
+  transition: transform 1s ease-in-out;
+}
+
+.loaded .line {
+  transform: translateX(0%);
+}
+
+.nav-items {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: space-around;
+  padding-right: 30px;
+  list-style: none;
+  font-size: 30px;
+}
+.nav-item {
+  text-decoration: none;
+}
+ul.show {
+  display: block;
+}
+.nav-link {
+  flex-direction: row;
+  color: variables.$ck-font;
+  text-decoration: none;
+}
+.nav-link:hover,
+.nav-link:active,
+.nav-link:focus {
+  color: variables.$accent;
+}
+
+.hamburger {
+  display: none;
+}
+
+@media screen and (max-width: 1000px) {
+  .nav-list.right-align {
+    justify-content: flex-end;
+  }
+
+  .nav-list {
+    z-index: 10;
+  }
+  .nav-items {
+    display: none;
+    width: 100%;
+    margin: 0;
+    padding: 80px 30px 30px 30px;
+    text-align: center;
+  }
+
+  .nav-item::after {
+    content: "";
+    display: block;
+    margin: 10px 0;
+    background-color: variables.$lines;
+    width: 100%;
+    height: 0.5px;
+    text-align: center;
+  }
+
+  .hamburger {
+    display: block;
+    margin-right: 35px;
+    align-self: flex-start;
+    border: 0;
+    margin-top: 20px;
+    background-color: transparent;
+    color: variables.$accent;
+    font-size: 35px;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .hamburger.open {
+    animation: openAnimation 0.2s ease-in-out forwards;
+  }
+
+  @keyframes openAnimation {
+    0% {
+      transform: rotate(0deg);
+    }
+    50% {
+      transform: rotate(90deg);
+    }
+    100% {
+      transform: rotate(180deg);
+    }
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .nav-items {
+    text-align: left;
+  }
+  .nav-link {
+    font-size: 25px;
+  }
+}

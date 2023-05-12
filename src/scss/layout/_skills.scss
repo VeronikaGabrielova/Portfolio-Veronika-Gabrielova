@@ -1,0 +1,39 @@
+@use "../abstracts/variables";
+
+.section-skills {
+  position: relative;
+  flex-direction: column;
+  height: 100vh;
+  overflow-x: hidden;
+}
+.icons-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  gap: 20px;
+  margin-top: 60px;
+}
+.icon-anime {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+  transition-delay: calc(var(--animation-order) * 200ms);
+  --animation-order: 0;
+}
+.icon-anime.visible {
+  opacity: 1;
+  transform: none;
+}
+
+.icon-header {
+  margin: 0;
+  text-align: center;
+}
+
+@media screen and (max-width: 1000px) {
+  .icon-img {
+    max-width: 100px;
+  }
+}
