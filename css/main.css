@@ -106,7 +106,7 @@ ul.show {
   }
   .hamburger {
     display: block;
-    margin-right: 20px;
+    margin-right: 35px;
     align-self: flex-start;
     border: 0;
     margin-top: 20px;
@@ -131,6 +131,9 @@ ul.show {
   }
 }
 @media screen and (max-width: 550px) {
+  .hamburger {
+    margin-right: 10px;
+  }
   .nav-items {
     text-align: left;
   }
@@ -301,7 +304,7 @@ ul.show {
 }
 @media screen and (max-width: 550px) {
   .socials {
-    gap: 10px;
+    gap: 30px;
     flex-direction: row;
     align-items: flex-end;
     height: 15vh;
@@ -311,7 +314,7 @@ ul.show {
     margin: 0;
   }
   .social svg {
-    width: 40px;
+    width: 50px;
   }
 }
 .section {
@@ -427,6 +430,7 @@ ul.show {
 }
 .section-skills {
   position: relative;
+  padding: 100px 20px 20px 20px;
   flex-direction: column;
   height: 100vh;
   overflow-x: hidden;
@@ -463,6 +467,9 @@ ul.show {
 @media screen and (max-width: 1000px) {
   .icon-img {
     max-width: 100px;
+  }
+  .section-skills {
+    padding: 100px 25px;
   }
 }
 .sub-section-alternative {
@@ -589,11 +596,13 @@ ul.show {
   border: 1px solid rgba(192, 192, 192, 0.3);
   cursor: pointer;
   font-size: 30px;
+  transition: transform 0.2s ease-in-out;
 }
 
 #myBtn:hover,
 #myBtn:active {
-  background-color: rgba(215, 215, 219, 0.5);
+  background-color: rgb(215, 215, 219);
+  transform: scale(1.05);
 }
 
 .contacts {
@@ -745,13 +754,12 @@ ul.show {
 }
 .footer {
   height: 10vh;
-  padding-bottom: 20px;
   text-align: center;
   background-color: #ebebf0;
 }
 
 .footer-text {
-  margin-top: 25px;
+  margin: 25px 0;
 }
 
 .footer-text:hover {

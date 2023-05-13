@@ -2,6 +2,7 @@
 
 .section-skills {
   position: relative;
+  padding: 100px 20px 20px 20px;
   flex-direction: column;
   height: 100vh;
   overflow-x: hidden;
@@ -35,5 +36,8 @@
 @media screen and (max-width: 1000px) {
   .icon-img {
     max-width: 100px;
+  }
+  .section-skills {
+    padding: 100px 25px;
   }
 }

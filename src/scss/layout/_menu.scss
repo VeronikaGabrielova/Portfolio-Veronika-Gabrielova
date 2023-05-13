@@ -86,7 +86,7 @@ ul.show {
 
   .hamburger {
     display: block;
-    margin-right: 20px;
+    margin-right: 35px;
     align-self: flex-start;
     border: 0;
     margin-top: 20px;
@@ -114,6 +114,9 @@ ul.show {
 }
 
 @media screen and (max-width: 550px) {
+  .hamburger {
+    margin-right: 10px;
+  }
   .nav-items {
     text-align: left;
   }

@@ -2,12 +2,11 @@
 
 .footer {
   height: 10vh;
-  padding-bottom: 20px;
   text-align: center;
   background-color: variables.$button;
 }
 .footer-text {
-  margin-top: 25px;
+  margin: 25px 0;
 }
 .footer-text:hover {
   color: variables.$accent;
