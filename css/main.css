@@ -591,7 +591,8 @@ ul.show {
   font-size: 30px;
 }
 
-#myBtn:hover {
+#myBtn:hover,
+#myBtn:active {
   background-color: rgba(215, 215, 219, 0.5);
 }
 
