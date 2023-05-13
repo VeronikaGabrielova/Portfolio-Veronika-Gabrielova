@@ -80,12 +80,6 @@
   .section-header {
     font-size: 30px;
   }
-
-  .sub-section:target .section-header {
-    display: block; /* show the header when the section is expanded */
-    margin-top: 45px; /* add some margin to separate it from the previous section */
-  }
-
   .headshot-image {
     max-width: 200px;
   }

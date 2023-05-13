@@ -86,14 +86,6 @@
     flex-wrap: wrap;
   }
 }
-@media screen and (max-width: 550px) {
-  .sub-section-alternative h2 {
-    display: block;
-    font-size: 30px;
-    margin-bottom: 50px;
-  }
-}
-
 @media screen and (max-width: 370px) {
   .project-card {
     min-width: 300px;

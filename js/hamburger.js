@@ -23,11 +23,6 @@ navList.classList.add("right-align");
 navList.classList.remove("right-align");
 }
 };
-const navLinks = document.querySelectorAll(".nav-link");
-navLinks.forEach((link) => {
-  link.addEventListener("click", toggleButton);
-});
-
 
 hamburgerButton.addEventListener("click", toggleButton);
 
