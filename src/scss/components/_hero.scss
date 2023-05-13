@@ -1,0 +1,79 @@
+@use "../abstracts/variables";
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.hero {
+  width: 100%;
+  height: 100vh;
+  flex-shrink: 0;
+  font-size: 30px;
+  animation: fadeIn 1.5s;
+  background-color: variables.$background;
+}
+.hero-area {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 30px;
+  height: 100%;
+}
+.hero-text {
+  margin: 0 0 50px 100px;
+}
+
+.hero-greet {
+  color: variables.$accent;
+  font-size: 20px;
+}
+.hero-name {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 64px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.hero-p {
+  color: variables.$sm-text;
+}
+
+@media screen and (max-width: 1000px) {
+  .hero-text {
+    margin-left: 100px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .hero-name {
+    font-size: 3.5rem;
+    padding-right: 20px;
+  }
+  .hero-area {
+    padding: 0 30px 0 0;
+  }
+  .hero-p {
+    font-size: 1rem;
+  }
+  .hero-text {
+    margin-left: 80px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .hero-area {
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column-reverse;
+  }
+
+  .hero-name {
+    font-size: 40px;
+  }
+  .hero-text {
+    margin-left: 35px;
+  }
+}

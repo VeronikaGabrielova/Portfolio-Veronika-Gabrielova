@@ -1,0 +1,27 @@
+@use "../abstracts/variables";
+
+.footer {
+  height: 10vh;
+  padding-bottom: 20px;
+  text-align: center;
+  background-color: variables.$button;
+}
+.footer-text {
+  margin-top: 25px;
+}
+.footer-text:hover {
+  color: variables.$accent;
+  cursor: pointer;
+}
+.footer::before {
+  display: block;
+  content: "";
+  background-color: variables.$lines;
+  width: 100%;
+  height: 1px;
+}
+@media screen and (max-width: 350px) {
+  .footer {
+    height: 15vh;
+  }
+}
