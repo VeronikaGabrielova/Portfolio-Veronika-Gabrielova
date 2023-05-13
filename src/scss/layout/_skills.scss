@@ -4,7 +4,7 @@
   position: relative;
   flex-direction: column;
   height: 100vh;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 .icons-container {
   display: flex;
@@ -35,5 +35,23 @@
 @media screen and (max-width: 1000px) {
   .icon-img {
     max-width: 100px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .section-skills {
+    height: 120vh;
+  }
+}
+@media screen and (max-width: 550px) {
+  .section-skills {
+    height: 170vh;
+  }
+  .section-skills .section-header {
+    display: block;
+    margin-top: 50px;
+  }
+  .icon-header {
+    display: block;
+    margin-top: 10px;
   }
 }
