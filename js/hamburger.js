@@ -43,3 +43,14 @@ mediaQuery.addEventListener("change", handleMediaChange);
 window.addEventListener("load", () => {
 document.body.classList.add("loaded");
 });
+
+//When click on link, menu close
+const navLinks = document.querySelectorAll(".nav-link");
+
+navLinks.forEach((link) => {
+  link.addEventListener("click", () => {
+    navList.classList.remove("show");
+    line.style.display = "block";
+    hamburgerButton.classList.remove("open");
+  });
+});
