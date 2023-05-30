@@ -10,12 +10,14 @@
 .project-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  gap: 30px;
+  justify-content: center;
 }
 .project-card {
   flex: 0 0 calc(100% / 3 - 30px);
   border-radius: 5px;
   min-width: 350px;
+  max-width: 450px;
   padding: 0 25px;
   margin-bottom: 30px;
   box-shadow: 5px 5px 20px variables.$lines;
@@ -86,8 +88,12 @@
     flex-wrap: wrap;
   }
 }
+
 @media screen and (max-width: 370px) {
   .project-card {
     min-width: 300px;
+  }
+  .project-icons {
+    flex-wrap: wrap;
   }
 }

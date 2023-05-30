@@ -482,13 +482,15 @@ ul.show {
 .project-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  gap: 30px;
+  justify-content: center;
 }
 
 .project-card {
   flex: 0 0 calc(33.3333333333% - 30px);
   border-radius: 5px;
   min-width: 350px;
+  max-width: 450px;
   padding: 0 25px;
   margin-bottom: 30px;
   box-shadow: 5px 5px 20px rgba(110, 110, 115, 0.2);
@@ -566,6 +568,9 @@ ul.show {
   .project-card {
     min-width: 300px;
   }
+  .project-icons {
+    flex-wrap: wrap;
+  }
 }
 .project-link {
   font-size: 20px;
@@ -580,6 +585,12 @@ ul.show {
 .project-link:focus,
 .project-link:active {
   color: #CE7B91;
+}
+
+a.disabled,
+a.disabled:hover {
+  color: #999999;
+  cursor: not-allowed;
 }
 
 #myBtn {
@@ -720,7 +731,6 @@ ul.show {
 }
 .contact-section {
   padding: 120px 200px;
-  height: 120vh;
   background-color: #ebebf0;
   color: #1d1d1f;
   text-align: center;
@@ -730,19 +740,20 @@ ul.show {
   margin-top: 120px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  gap: 150px;
+  justify-content: center;
   align-items: center;
 }
 
 @media screen and (max-width: 1200px) {
+  .flex-container {
+    gap: 50px;
+  }
   .contact-section {
     padding: 120px 100px;
   }
 }
 @media screen and (max-width: 950px) {
-  .contact-section {
-    height: 180vh;
-  }
   .flex-container {
     flex-direction: column;
   }

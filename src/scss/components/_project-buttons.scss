@@ -16,3 +16,9 @@
 .project-link:active {
   color: variables.$accent;
 }
+
+a.disabled,
+a.disabled:hover {
+  color: #999999;
+  cursor: not-allowed;
+}

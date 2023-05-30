@@ -2,8 +2,6 @@
 
 .contact-section {
   padding: 120px 200px;
-  height: 120vh;
-
   background-color: variables.$button;
   color: #1d1d1f;
   text-align: center;
@@ -12,20 +10,21 @@
   margin-top: 120px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  gap: 150px;
+  justify-content: center;
   align-items: center;
 }
 
 @media screen and (max-width: 1200px) {
+  .flex-container {
+    gap: 50px;
+  }
   .contact-section {
     padding: 120px 100px;
   }
 }
 
 @media screen and (max-width: 950px) {
-  .contact-section {
-    height: 180vh;
-  }
   .flex-container {
     flex-direction: column;
   }

@@ -19,13 +19,14 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
+    <link rel="icon" type="image/x-icon" href="/src/images/icons/favicon.ico">
 
     <link rel="stylesheet" href="css/main.css" />
 
     <title>Veronika Gabrielová</title>
   </head>
   <body>
-    <button  onclick="topFunction()" id="myBtn" title="Go to top">
+    <button onclick="topFunction()" id="myBtn" title="Go to top">
       <i class="fa-solid fa-arrow-up" style="color: #ce7b91"></i>
     </button>
     <section class="hero" id="home">
@@ -54,7 +55,7 @@
         <div class="hero-text">
           <p class="hero-greet">Hi, my name is</p>
           <h1 class="hero-name">Veronika Gabrielová</h1>
-          <p class="hero-p">Junior UX/UI and Web Development</p>
+          <p class="hero-p">Junior in Web Development</p>
 
           <div class="button">
             <a class="button-link" href="#about-me">About me</a>
@@ -102,9 +103,8 @@
       <div class="information">
         <h2 class="section-header">About me</h2>
         <p>
-          Hi there! My name is Veronika Gabrielová and I'm a junior web
-          developer with a strong interest in
-          <span>frontend development and UX/UI</span>.
+          Hi there! My name is Veronika Gabrielová and I'm <span class="about-highlight">interested in
+          web development</span>.
         </p>
         <p>
           I'm currently
@@ -283,6 +283,64 @@
                   href="https://react-levi-express.netlify.app/"
                   >Demo</a
                 >
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-img-container">
+            <img
+              class="project-image"
+              src="./src/images/taskify.png"
+              alt="TASKIFY project photo"
+            />
+          </div>
+          <hr class="project-line" />
+          <div class="project-info">
+            <h3 class="project-header">TASKIFY</h3>
+            <p class="subtext">
+              Application for creating tasks and progress. I wanted to try
+              create and set database.
+            </p>
+
+            <div class="project-icons">
+              <img
+                class="project-icon"
+                src="./src/images/icons/react.svg"
+                alt="React icon"
+              />
+              <img
+                class="project-icon"
+                src="./src/images/icons/javascript.svg"
+                alt="Javascript icon"
+              />
+              <img
+                class="project-icon"
+                src="./src/images/icons/postgresql.svg"
+                alt="PostgreSQL icon"
+              />
+              <img
+                class="project-icon"
+                src="./src/images/icons/npm.svg"
+                alt="NPM icon"
+              />
+              <img
+                class="project-icon"
+                src="./src/images/icons/sass.svg"
+                alt="SASS icon"
+              />
+            </div>
+            <hr class="project-line" />
+            <div class="projects-links">
+              <p>
+                <a
+                  class="project-link"
+                  href="https://github.com/VeronikaGabrielova/PROJECT-TASKIFY"
+                  >Code</a
+                >
+              </p>
+              <p>
+                <a tabindex="-1" class="project-link disabled" href="#">Demo</a>
               </p>
             </div>
           </div>
@@ -544,7 +602,8 @@
           <div class="project-info">
             <h3 class="project-header">Gabriel Whiskey</h3>
             <p class="subtext">
-              This is a Figma project. Look at the preview for desktop and mobile!
+              This is a Figma project. Look at the preview for desktop and
+              mobile!
             </p>
 
             <div class="project-icons">
@@ -603,7 +662,7 @@
           </div>
         </div>
 
-        <form class="form">
+        <form action="https://submit-form.com/BbOcvz2t" class="form">
           <div class="form-group">
             <label for="name" class="form-label">Name</label>
             <input
